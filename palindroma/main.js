@@ -1,6 +1,26 @@
 /* Palidroma
 Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma */
 
+
+const userWord = prompt("Inserisci una parola, ti dirò se è palindroma o no");
+console.log(userWord);
+
+/* creare un array dalla stringa che abbia come elementi singoli le lettere che la compongono
+ribaltare l'array
+ricomporre le lettere ormai rovesciate della parseFloat
+
+checkare se è ancora uguale a se stessa */
+
+
+
+
+
+
+
+
+
+
+/* VERSIONE CON SPLIT/REVERSE/JOIN
 const userWord = prompt("Inserisci una parola, ti dirò se è palindroma o no");
 console.log(userWord);
 
@@ -20,8 +40,8 @@ function wordTester(word) {
     // "olleh"
     console.log(joinArray);
 
-    /* //Step 4. Return the reversed string
-    return joinArray; // "olleh" */
+    //Step 4. Return the reversed string
+    //return joinArray; // "olleh" 
 
     if (userWord === joinArray) {
         console.log("E' palindroma");
@@ -30,4 +50,4 @@ function wordTester(word) {
     }
 }
 
-const result = wordTester(userWord);
+const result = wordTester(userWord); */
