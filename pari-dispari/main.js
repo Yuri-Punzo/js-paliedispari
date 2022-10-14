@@ -39,3 +39,21 @@ function evenOrOdd() {
 }
 
 evenOrOdd(userEvenOrOdd);
+
+
+
+/* //soluzione alternativa forse leggeremente più precisa per la consegna
+function x(num1, num2) {
+  const sum = num1 + num2;
+  if (sum % 2 === 0) {
+    return "pari"
+  } else {
+    return "dispari"
+  }
+}
+
+if (x(userNumber,computerNumber) === userEvenOrOdd) {
+  console.log("ha vinto user");
+} else {
+  console.log("ha vinto il pc");
+} */
