@@ -8,7 +8,7 @@ const userWord = prompt("Inserisci una parola, ti dirò se è palindroma o no");
 // VERSIONE SCOMPOSTA SENZA SPLIT/REVERSE/JOIN MA CON 
 
 let text = userWord
-let reversedWord
+let reversedWord = ""
 
 function palindromeVerifier() {
     let i = text.length;
