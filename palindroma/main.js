@@ -2,31 +2,33 @@
 Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma */
 
 
+
+// VERSIONE SCOMPOSTA SENZA SPLIT/REVERSE/JOIN MA CON CICLO E CHARAT
+
 const userWord = prompt("Inserisci una parola, ti dirò se è palindroma o no");
-//console.log(userWord);
+console.log(userWord);
 
-// VERSIONE SCOMPOSTA SENZA SPLIT/REVERSE/JOIN MA CON 
+let reversedWord = "" //gli assegno il valore "" per poter partire da una stringa vuota quando ci sommerò char nel ciclo while
 
-let text = userWord
-let reversedWord = ""
-
-function palindromeVerifier() {
-    let i = text.length;
-    while (i != 0) {
+// con questa funzione di fatto leggo la parola al contrario lettera per lettera e la ricompongo, poi la paragono a quella immessa dall'utente
+palindromeVerifier(userWord);
+function palindromeVerifier(text) {
+    let i = text.length; // serve a far partire dall'ultima lettera della parola
+    while (i > 0) {
         let char = text.charAt(i - 1); // si mette i-1 perché i parte a contare da 0, length invece parte da 1 !
-        reversedWord += char
+        console.log(char);
+        reversedWord += char // questo di fatto rimonta la parola al contrario sommando le lettere pescate dal testo
         i--
     }
     console.log(reversedWord);
 
-    if (reversedWord === userWord) {
+    if (reversedWord === text) {
         console.log("è palindroma");
     } else {
         console.log("non è palindroma");
     }
 }
 
-palindromeVerifier(text);
 
 
 
@@ -47,11 +49,10 @@ function wordTester(word) {
     // ["o", "l", "l", "e", "h"]
 
     // Step 3. Use the join() method to join all elements of the array into a string
-    const joinArray = reverseArray.join("g");
+    const joinArray = reverseArray.join("");
     console.log(joinArray);
     // var joinArray = ["o", "l", "l", "e", "h"].join("");
     // "olleh"
-    console.log(joinArray);
 
     //Step 4. Return the reversed string
     //return joinArray; // "olleh" 
@@ -63,4 +64,4 @@ function wordTester(word) {
     }
 }
 
-const result = wordTester(userWord); */
+wordTester(userWord); */
