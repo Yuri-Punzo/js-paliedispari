@@ -3,7 +3,7 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
 
 
 
-// VERSIONE SCOMPOSTA SENZA SPLIT/REVERSE/JOIN MA CON CICLO E CHARAT
+// SECONDA VERSIONE - SCOMPOSTA SENZA SPLIT/REVERSE/JOIN MA CON CICLO E CHARAT
 
 const userWord = prompt("Inserisci una parola, ti dirò se è palindroma o no");
 console.log(userWord);
@@ -63,7 +63,7 @@ function palindromeTester(userWord) {
 } */
 
 
-/* //VERSIONE RAPIDA CON SPLIT/REVERSE/JOIN
+/* //PRIMA VERSIONE - CON SPLIT/REVERSE/JOIN
 
 const userWord = prompt("Inserisci una parola, ti dirò se è palindroma o no");
 console.log(userWord);
