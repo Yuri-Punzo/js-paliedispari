@@ -30,37 +30,7 @@ function palindromeVerifier(text) {
 }
 
 
-// TERZA VERSIONE ipersemplificata con solo funzione, cicli e if/else
 
-//creo var esterna parola e var esterna parola_reversed
-//poi creo due cicli for uno incrementale e uno decrementale
-//controllo se la prima var è uguale alla seconda var
-//fine
-
-/* const inputWord = prompt("dimmi una parola")
-
-palindromeTester(inputWord)
-function palindromeTester(userWord) {
-
-
-    let userWordLetters
-    for (let i = 0; i < userWord.length; i++) {
-        userWordLetters = userWord.charAt(i)
-        console.log(userWordLetters);
-    }
-
-    let reversedWordLetters
-    for (let i = userWord.length; i > 0; i--) {
-        reversedWordLetters = userWord.charAt(i - 1)
-        console.log(reversedWordLetters);
-    }
-
-    if (userWordLetters === reversedWordLetters) {
-        console.log("è palindroma");
-    } else {
-        console.log("non è palindroma");
-    }
-} */
 
 
 /* //PRIMA VERSIONE - CON SPLIT/REVERSE/JOIN
