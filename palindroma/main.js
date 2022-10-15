@@ -31,6 +31,28 @@ function palindromeVerifier(text) {
 
 
 
+/* //TERZA VERSIONE SENZA CHARAT
+
+const userWord = prompt("Inserisci una parola, ti dirò se è palindroma o no");
+console.log(userWord);
+
+let reversedWord = ""
+
+palindrome(userWord);
+function palindrome(word) {
+    for (let i = word.length; i > 0; i--) {
+        let char = word[i - 1];
+        console.log(char);
+        reversedWord += char;
+    }
+    console.log(reversedWord);
+    if (reversedWord === word) {
+        console.log("è palindroma");
+    } else {
+        console.log("non è palindroma");
+    }
+} */
+
 
 
 /* //PRIMA VERSIONE - CON SPLIT/REVERSE/JOIN
